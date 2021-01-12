@@ -4,6 +4,7 @@ body {
     font-family: 'Raleway', sans-serif;
     padding: 0;
     margin: 0;
+    display: block;
 }
 
 header {
@@ -34,6 +35,11 @@ ul li a {
     color: #555;
 }
 
+ul li a:hover {
+    color: rgb(209, 20, 20);
+    font-weight: bold;
+    border-bottom: 1px dotted rgb(209, 20, 20);
+}
 
 .banner img {
     width: 100%;
@@ -51,31 +57,36 @@ ul li a {
 }
 
 .music {
+    border: 1px dashed blue;
     text-align: center;
     margin: 200px 0px 100px 0px;
 }
 
 ul.listmusic {
+    border: 1px dashed red;
     list-style: disc;
-    padding: 20px 50px;
-    margin: 0 100px 0 600px;
+    padding: 20px 20px;
+    margin: 20px 300px;
     text-align: left;
 }
 
 ul.listmusic li {
+    border: 1px dashed green;
     display: list-item;
     padding: 0 0;
 }
 
 ul.creditos {
+    border: 1px dashed greenyellow;
     list-style: none;
-    padding: 20px 30px;
-    margin: 0 100px 0 600px;
+    padding: 20px 20px;
+    margin: 20px 300px;
     text-align: left;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 ul.creditos li {
+    border: 1px dashed red;
     display: list-item;
     padding: 0 0;
 }
@@ -83,11 +94,36 @@ ul.creditos li {
 .contact {
     text-align: left;
     margin: 200px 0px 100px 0px;
-    padding: 0 300px 0 300px;    
+    padding: 0 300px 0 300px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    display: block;
+}
+
+button {
+    background: rgb(209, 20, 20);
+    opacity: 70%;
+    border-radius: 15px;
+    height: 30px;
+    width: 60px;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    opacity: 100%;
 }
 
 footer {
-    background: #999;
+    background: rgb(117, 117, 117);
+    color: rgb(192, 192, 192);
     text-align: center;
     width: 100%;
     padding: 10px 0px;
